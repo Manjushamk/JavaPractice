@@ -23,7 +23,7 @@ public class ChocolateSegmentSlidingWindow {
             count++;
         }
 
-        for (int i= m ; i< s.size() - 2; i++){
+        for (int i= m ; i< s.size(); i++){
             temp_sum += s.get(i) - s.get(i-m);
             if(temp_sum == d){
                 count++;
@@ -34,12 +34,27 @@ public class ChocolateSegmentSlidingWindow {
 
     public static void main(String[] args) {
         List<Integer> chocolateList = new ArrayList<>();
-        chocolateList.add(1);
+
         chocolateList.add(2);
+        chocolateList.add(5);
         chocolateList.add(1);
-        chocolateList.add(2);
         chocolateList.add(3);
-        int result = birthday(chocolateList,3,2);
+        chocolateList.add(4);
+        chocolateList.add(4);
+        chocolateList.add(3);
+        chocolateList.add(5);
+        chocolateList.add(1);
+        chocolateList.add(1);
+        chocolateList.add(2);
+        chocolateList.add(1);
+        chocolateList.add(4);
+        chocolateList.add(1);
+        chocolateList.add(3);
+        chocolateList.add(3);
+        chocolateList.add(4);
+        chocolateList.add(2);
+        chocolateList.add(1);
+        int result = birthday(chocolateList,18,7);
         System.out.println(result);
 
     }
