@@ -23,7 +23,7 @@ public class Kangaroo {
     public static void main(String[] args) throws IOException {
         int x1 = 0;
 
-        int v1 = 2;
+        int v1 = 3;
 
         int x2 = 5;
 
