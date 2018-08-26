@@ -29,7 +29,7 @@ public class MigratoryBirdsTest {
         birdList.add(4);
         birdList.add(2);
         int result = m.migratoryBirds(birdList);
-        assertEquals(2,result);
+        assertEquals(1,result);
     }
 
 }
