@@ -40,6 +40,14 @@ public class kthElementInList {
         return slow.data;
     }
 
+    private static boolean deleteMiddle(Node n){
+        if(n == null || n.next == null){
+            return false;
+        }
+        n.data = n.next.data;
+        n.next = n.next.next;
+        return true;
+    }
 
 
     public static void main(String[] args) {
@@ -51,8 +59,10 @@ public class kthElementInList {
         list.head.next.next.next.next = new Node(5);
         list.head.next.next.next.next.next = new Node(6);
         int k = 3;
+        Node mid = list.head.next.next.next;
         System.out.println(list.getKthElement(head, k));
-       // list.printlist(head);
+        System.out.println(deleteMiddle(mid));
+        list.printlist(head);
     }
 
 }
