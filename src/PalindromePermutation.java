@@ -6,12 +6,12 @@ public class PalindromePermutation {
         char[] c = s.toLowerCase().toCharArray();
         HashMap<Character,Integer> hm = new HashMap<>();
         int count = 0;
-        for(char x: c){
-            if(Character.isLetterOrDigit(x)){
-                if(hm.containsKey(x)){
-                    hm.put(x,hm.get(x)+1);
-                }else{
-                    hm.put(x,1);
+        for(char x: c) {
+            if (Character.isLetterOrDigit(x)) {
+                if (hm.containsKey(x)) {
+                    hm.put(x, hm.get(x) + 1);
+                } else {
+                    hm.put(x, 1);
                 }
                 count++;
             }
